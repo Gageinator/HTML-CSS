@@ -6,7 +6,8 @@ D = {
     {
         "name" : "Alice Smith",
         "DOB" : "Jan.1",
-        "email" : "alice@example.com"
+        "email" : "alice@example.com",
+        "image" : "/static/Alice.png"
     },
     "bob":
     {
@@ -35,5 +36,5 @@ class ProfileHandler(tornado.web.RequestHandler):
         info = D[uname]
         self.render("profilepage.html",
                     name=info["name"], dateOfBirth=info["DOB"],
-                    email=info["email"])
+                    email=info["email"], image=info["image"])
         

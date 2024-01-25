@@ -2,18 +2,24 @@
 <html>
 <head>
     <title>Your Profile:</title>
+    <link rel=stylesheet href="/static/Style.css">
 </head>
 <body>
-<div style="border: 1px solid blue;">
+<img src= "{{image}}" class ="profilepicture">
+<div style="background: beige; display: inline-block">
+<div class="name">
 Your Name: {{name}}
 </div>
 <br>
-<div>
+<div class = "date">
 Your Date of Birth: {{dateOfBirth}}
 </div>
 <br>
-<div>
+<div class = "email">
 Your Email: {{email}}
+</div>
+<div>
+</div>
 </div>
 </body>
 </html>
