@@ -13,19 +13,22 @@ D = {
     {
         "name" : "Bob Jones",
         "DOB" : "Dec.31",
-        "email" : "bob@bob.xyz"
+        "email" : "bob@bob.xyz",
+        "image" : "/static/Bob.png"
     },
     "carol":
     {
         "name" : "Carol Ling",
         "DOB" : "Jul.17",
-        "email" : "carol@example.com"
+        "email" : "carol@example.com",
+        "image" : "/static/Carol.png"
     },
     "dave":
     {
         "name" : "Dave N. Port",
         "DOB" : "Mar.14",
-        "email" : "dave@dave.dave"
+        "email" : "dave@dave.dave",
+        "image" : "/static/Dave.png"
     }
 }
 
