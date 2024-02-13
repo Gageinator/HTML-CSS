@@ -3,12 +3,13 @@
 <head>
     <title>Your Profile:</title>
     <link rel=stylesheet href="/static/Style.css">
+    <meta charset="utf-8">
 </head>
 <body>
 <img src= "{{image}}" class ="profilepicture">
-<div style="background: beige; display: inline-block; border: 3px dashed black;">
+<div style="background: papayawhip; display: inline-block; border: 3px dashed black;">
 <div class="name">
-Your Name: {{name}}
+Your Name: {{f_name}} {{l_name}}
 </div>
 <br>
 <div class = "date">
@@ -19,7 +20,15 @@ Your Date of Birth: {{dateOfBirth}}
 Your Email: {{email}}
 </div>
 <div>
+    <table>
+        <tr><td>First Name: <td><input id="fname">
+        <tr><td>Last Name:  <td><input id="lname">
+        <tr><td>Date of Birth:  <td><input id="birthdate" type='date'>
+        <tr><td>Profile pic: <td><input id="ppic" type="file">
+        </table>
+<button onclick="submit()">Submit</button>
 </div>
 </div>
+<script src = "/static/updateprofile.js"></script>
 </body>
 </html>
